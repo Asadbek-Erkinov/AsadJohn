@@ -147,6 +147,10 @@ img {
   align-items: center;
 }
 
+.bx-menu {
+  
+}
+
 /* nav  */
 
 .navbar {
@@ -220,6 +224,7 @@ img {
   height: calc(100% - 3rem);
   row-gap: 1rem;
   padding-top: 30px;
+ 
 }
 
 .hero__data {
@@ -236,14 +241,18 @@ img {
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: .07rem #4070F4;
-  animation-name: display-text;
+  animation-name: display-text; 
   animation-duration: 16s linear;
   animation-iteration-count: infinite;
-  animation-delay: calc(-3s * var(--i));
+  animation-delay: calc(-4s * var(--i));
 }
 
 @keyframes display-text {
-  25%,100% {
+  25% {
+    display: none;
+  }
+  
+  100% {
     display: none;
   }
 }
@@ -261,16 +270,31 @@ img {
   animation-iteration-count: infinite;
 }
 
+
 @keyframes fill-text {
 
-  10%,100% {
+  10% {
     width: 0;
   }
-
-  70%,90% {
+  
+  70%{
+    width: 100%;
+  }
+  
+  90% {
     width: 100%;
   }
 
+  100% {
+    width: 0;
+  }
+
+}
+
+section.active {
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
 }
 
 
@@ -309,6 +333,9 @@ img {
   box-shadow: 0 10px 36px rgba(0,0,0, .15);
 }
 
+
+
+
 .about {
   row-gap: 2rem;
   text-align: center;
@@ -332,6 +359,9 @@ img {
   width: 200px;
   border-radius: .5rem;
 }
+
+
+
 
 .skills__container {
   row-gap: 2rem;
@@ -400,6 +430,68 @@ img {
 }
 
 
+
+
+
+.work {
+
+}
+
+.work-wrapper {
+
+}
+
+.work__title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.work__title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.work__desc {
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.work__span {
+  color: #4070F4;
+}
+
+.work-family-wrap {
+
+}
+
+.work-family-title {
+  text-align: center;
+  color: #4070F4;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.work-family-img {
+  /* border: 1px solid #000; */
+  border-radius: 10px;
+}
+
+
+
+
+
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -419,6 +511,8 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+
+
 
 .site-footer {
   background-color: var(--second-color);

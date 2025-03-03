@@ -58,7 +58,11 @@
         </nav>
         
         <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
+          <img src="./images/hamburgericon.svg" 
+          width="50"
+          height="50"
+          alt="">
+          <!-- <i class="bx bx-menu fa-2x"></i> -->
         </div>
       </div>
     </div>
@@ -74,9 +78,7 @@
         <div class="hero__data">
           <h1 class="hero__title">
             Hi, <br> I'am <span class="hero__title-color">Asadbek</span>
-            <br> <span style="--i:3" class="mini-span" data-text="Frontend developer">Frontend dev</span> 
-            <!-- <span style="--i:2" class="mini-span" data-text="Mentor">Mentor</span>
-            <span style="--i:1" class="mini-span" data-text="Coder">Coder</span> -->
+            <br> <span style="--i:3;" class="mini-span" data-text="Frontend developer">Frontend dev</span> 
           </h1>
           
           <a class="hero__btn" href="tel:+998942497277">Contact</a>
@@ -201,25 +203,40 @@
       </div>
     </section>
     
-    <!-- <section class="work bd-grid">
+    <section class="work bd-grid" id="work">
       <div class="container">
-        <div class="work__img">
-          <img src="" alt="">
+        <div class="work-wrapper">
+          <h2 class="work__title">
+            Work
+          </h2>
+
+          <p class="work__desc">
+            Ayni paytda PDP Ecocystemda PDP Junior companyda <span class="work__span">Frontend Mentor (O'qituvchi)</span>  lavozimida ishlayman.
+          </p>
+        </div>
+
+        <div class="work-family-wrap">
+          <h2 class="work-family-title">
+            Team 
+          </h2>
+
+          <img class="work-family-img" src="./images/team.JPG" alt="">
         </div>
       </div>
-    </section> -->
+    </section>
     
     <section class="contact section" id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
+          <form action="https://htmlacademy.ru" class="contact__form">
             <input class="contact__input" type="text" placeholder="Name">
             <input class="contact__input" type="email" placeholder="Email">
             <textarea class="contact__input" name="" id="" rows="10"></textarea>
             
-            <input class="contact__button hero__btn" type="button" value="Enviar">
+            <!-- <button class="contact__button hero__btn" type="button" value=""> -->
+              <button class="contact__button hero__btn" type="reset">Send</button>
           </form>
         </div>
       </div>
